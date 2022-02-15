@@ -19,7 +19,15 @@
             width: 25%; 
             background-color: #fff;
             border-radius: 5px;
-            box-shadow: 0px 0px 5px #ccc;}
+            box-shadow: 0px 0px 10px rgb(51, 50, 50);
+        }
+        
+        label {
+            font-size: 12px;
+            color: rgb(58, 56, 56);
+            margin-left: 5px;
+        }
+
 
         .container input {
             width: 100%;
@@ -36,21 +44,24 @@
     </style>
 <body>
     <div class="container">
-        <center><h1>Registration</h1></center>
+        <center><h1>Sign Up</h1></center>
         <form action="register.html" method="post">
-            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="firstname" placeholder="First name" required>
             <br><br>
-            <input type="text" name="lastname" placeholder="Last Name" required>
+            <input type="text" name="lastname" placeholder="Last name" required>
             <br><br>
-            <input type="date" name="birthDate" placeholder="Birth Date" required>
+            <label>Birthday</label>
+            <input type="date" name="birthDate"  required>
+            <br><br>
+            <input type="tel" name="phone" placeholder="Mobile number" required>
             <br><br>
             <input type="email" name="email" placeholder="Email" required>
             <br><br>
-            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="password" placeholder="New Password" required>
             <br><br>
             <input type="password" name="password2" placeholder="Confirm Password" required>
             <br><br>
-            <button type="submit">Register</button>
+            <button type="submit">Sign Up</button>
         </form>
 
 
