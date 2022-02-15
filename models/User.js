@@ -14,6 +14,10 @@ const UserSchema = new mongoose.Schema({
         required: true
 
     },
+    birthDate: {
+        type: Date,
+        required: true
+    },
     date: {
         type: Date,
         dedault: Date.now
