@@ -49,7 +49,7 @@
     }   
 
     div.content {
-    margin-left: 200px;
+    margin-left: 500px;
     padding: 1px 16px;
     height: 1000px;
     }
@@ -87,24 +87,75 @@
         <a href="logout.html">Logout</a>
     </div>
 
+   
     <div class="content">
-        <h1>User Management</h1>
+        <h2>User Management</h2>
         <br>
         <button id="addUser">Add User</button>
-        <br>
-        <br>
-        <table>
+        <br>          
+        <table class="table table-hover">
+          <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Password</th>
-                <th>Role</th>
-                <th>Edit</th>
-                <th>Delete</th>
+              <th>ID</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Password</th>
+              <th>Role</th>
+              <th>Edit</th>
             </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+              <td>306-911-0222</td>
+              <td>12345</td>
+              <td>Admin</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td>301-119-0440</td>
+              <td>23231</td>
+              <td>Employer</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+              <td>306-455-0798</td>
+              <td>54321</td>
+              <td>Employer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+                <td>306-455-0798</td>
+                <td>54321</td>
+                <td>Employer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+                <td>306-455-0798</td>
+                <td>54321</td>
+                <td>Employer</td>
+            </tr>
+              
+          </tbody>
         </table>
-    </div>
+      </div>
 
         
     
