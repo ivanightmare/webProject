@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-     
-
-
+    <title>User Management System</title>
+</head>
 <style>
     Body {
         font-family: Calibri;
@@ -55,6 +53,11 @@
     padding: 1px 16px;
     height: 1000px;
     }
+    
+    table, th, td {
+    border:1px solid rgb(73, 70, 70);
+    border-collapse: collapse;
+    }
 
     @media screen and (max-width: 700px) {
     .sidebar {
@@ -76,19 +79,34 @@
     
 
 </style>
-</head>
 <body>
+
     <div class="sidebar">
-        <div class="imgcontainer">
-            <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-1024.png" alt="Avatar" class="avatar">
-        </div>
-        <a class="active" href="#home">Home</a>
-        <a href="#Dashboard">Dashboard</a>
-        <a href="#calendar">Calendar</a>
-        <a href="#settings">Settings</a>
-        <a href="/views/userManagement.html">User Management</a>
-        <a href="#Logout">Logout</a>
-      </div>
+        <a href="profile.html">Profile</a>
+        <a href="userManagement.html">User Management</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div class="content">
+        <h1>User Management</h1>
+        <br>
+        <button id="addUser">Add User</button>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Role</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+
+        
     
 </body>
 </html>
